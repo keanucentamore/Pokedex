@@ -1,0 +1,31 @@
+@font-face {
+    font-display: swap;
+    font-family: "Press Start 2P";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/press-start-2p-v16-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/rubik-v31-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/rubik-v31-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/rubik-v31-latin-700.woff2") format("woff2");
+}

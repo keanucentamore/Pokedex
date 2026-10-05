@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/pokeball.svg">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/standard.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/controls.css">
+    <script src="./js/template.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="device">
+        <header class="device-header">
+            <div class="lens-group" aria-hidden="true">
+                <div class="lens">
+                    <div class="lens-inner">
+                        <div class="lens-shine"></div>
+                    </div>
+                </div>
+                <div class="leds">
+                    <div class="led led-red"></div>
+                    <div class="led led-yellow"></div>
+                    <div class="led led-green"></div>
+                </div>
+            </div>
+            <div class="brand">
+                <img class="brand-logo" src="./assets/icons/pokeball.svg" alt="Pokédex logo">
+                <h1 class="brand-title">Pokédex</h1>
+            </div>
+            <div class="search">
+                <input class="search-input" id="searchInput" data-id="search-input" type="text"
+                    placeholder="Search Pokémon" aria-label="Search Pokémon by name">
+                <button class="search-button" id="searchButton" data-id="search-button"
+                    aria-label="Search">Go</button>
+            </div>
+        </header>
+
+        <main class="device-body" data-id="content">
+            <section class="screen-frame" aria-label="Pokédex screen">
+                <div class="screen-dots" aria-hidden="true">
+                    <div class="screen-dot"></div>
+                    <div class="screen-dot"></div>
+                </div>
+                <div class="screen">
+                    <ul class="card-list" id="cardList"></ul>
+                    <div class="status-message" id="statusMessage"></div>
+                </div>
+                <div class="screen-bottom" aria-hidden="true">
+                    <div class="screen-button"></div>
+                    <div class="speaker">
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                        <div class="speaker-line"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="device-controls">
+                <button class="load-more-button" id="loadMoreButton" data-id="load-more-button"
+                    aria-label="Load more Pokémon">Load more</button>
+                <div class="d-pad" aria-hidden="true">
+                    <div class="d-pad-up"></div>
+                    <div class="d-pad-left"></div>
+                    <div class="d-pad-center"></div>
+                    <div class="d-pad-right"></div>
+                    <div class="d-pad-down"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
