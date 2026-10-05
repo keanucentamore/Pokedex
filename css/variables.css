@@ -1,21 +1,21 @@
 :root {
-    /* PAGE */
+    /* PAGE VARIABLES */
     --color-page: #1C1F24;
     --content-max-width: 1440px;
 
-    /* CASE */
+    /* CASE COLORS */
     --color-device-red: #DC0A2D;
     --color-device-red-dark: #A3071F;
     --color-device-red-light: #F2384F;
 
-    /* LENS & LAMP */
+    /* LENS & LAMP COLORS */
     --color-lens-blue: #29A8E0;
     --color-lens-blue-light: #8FD8F5;
     --color-led-red: #FF3B3B;
     --color-led-yellow: #FFD23F;
     --color-led-green: #3DDC6E;
 
-    /* SCREEN */
+    /* SCREEN COLORS */
     --color-bezel: #DEDEDE;
     --color-bezel-dark: #B5B5B5;
     --color-screen: #1B2733;
@@ -25,6 +25,28 @@
     --color-white: #FFFFFF;
     --color-text-light: #F2F4F7;
     --color-text-dark: #1A1A1A;
+
+    
+    /* ELEMENT TYPE COLORS */
+    --type-normal: #A8A77A;
+    --type-fire: #EE8130;
+    --type-water: #6390F0;
+    --type-electric: #F7D02C;
+    --type-grass: #7AC74C;
+    --type-ice: #96D9D6;
+    --type-fighting: #C22E28;
+    --type-poison: #A33EA1;
+    --type-ground: #E2BF65;
+    --type-flying: #A98FF3;
+    --type-psychic: #F95587;
+    --type-bug: #A6B91A;
+    --type-rock: #B6A136;
+    --type-ghost: #735797;
+    --type-dragon: #6F35FC;
+    --type-dark: #705746;
+    --type-steel: #B7B7CE;
+    --type-fairy: #D685AD;
+    --color-white-soft: #FFFFFF59;
 
     /* FONTS */
     --font-pixel: "Press Start 2P", "Courier New", monospace;

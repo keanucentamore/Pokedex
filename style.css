@@ -27,6 +27,9 @@ body {
     flex-direction: column;
 }
 
+
+/* BREAKPOINTS */
+
 @media screen and (max-width: 480px) {
     body {
         padding: 8px;
