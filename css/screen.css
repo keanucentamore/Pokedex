@@ -36,6 +36,13 @@
     border-radius: 8px;
 }
 
+.status-text {
+    padding: 24px 0;
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
 .screen-bottom {
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,4 @@
-/* CARD GRID */
+/* CARD GRID & CARD */
 
 .card-list {
     list-style: none;
@@ -6,9 +6,6 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
 }
-
-
-/* CARD SMALL */
 
 .card {
     width: 100%;
@@ -25,16 +22,10 @@
     transition: transform 150ms ease, border-color 150ms ease;
 }
 
-
-/* CARD HOVER */
-
 .card:hover {
     transform: translateY(-4px);
     border-color: var(--color-white);
 }
-
-
-/* CARD ADDITIONAL CONFIG */
 
 .card-header {
     width: 100%;
@@ -72,9 +63,6 @@
     justify-content: center;
     gap: 6px;
 }
-
-
-/* CARD TYPE BADGE */
 
 .type-badge {
     padding: 3px 10px;
