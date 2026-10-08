@@ -42,9 +42,9 @@
             </div>
             <div class="search">
                 <input class="search-input" id="searchInput" data-id="search-input" type="text"
-                    placeholder="Search Pokémon" aria-label="Search Pokémon by name">
+                    placeholder="Search Pokémon" aria-label="Search Pokémon by name" oninput="handleSearchInput()">
                 <button class="search-button" id="searchButton" data-id="search-button"
-                    aria-label="Search">Go</button>
+                    aria-label="Search" onclick="searchPokemon()" disabled>Go</button>
             </div>
         </header>
 

@@ -9,7 +9,9 @@
     border-bottom: 4px solid var(--color-black);
 }
 
+
 /* POKEDEX LENS & LAMP */
+
 .lens-group {
     display: flex;
     align-items: flex-start;

@@ -114,6 +114,159 @@
 }
 
 
+/* TABS */
+
+.dialog-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 12px 0;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    font-family: var(--font-pixel);
+    font-size: 12px;
+    color: var(--color-text-light);
+    background-color: transparent;
+    border: 3px solid var(--color-bezel-dark);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 150ms ease;
+}
+
+.tab-button:hover {
+    border-color: var(--color-white);
+}
+
+.tab-button-active {
+    color: var(--color-text-dark);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.tab-content {
+    min-height: 220px;
+    padding: 16px;
+    color: var(--color-text-light);
+}
+
+
+/* ABOUT, STATS & EVOLUTION */
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th {
+    width: 90px;
+    padding: 6px 12px 6px 0;
+    font-weight: 500;
+    text-align: left;
+    color: var(--color-bezel-dark);
+}
+
+.info-table td {
+    padding: 6px 0;
+}
+
+.about-abilities {
+    text-transform: capitalize;
+}
+
+.info-table .stat-value {
+    width: 44px;
+    padding-right: 12px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.stat-bar {
+    height: 10px;
+    background-color: var(--color-white-soft);
+    border-radius: 5px;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.tab-message {
+    padding-top: 24px;
+    text-align: center;
+}
+
+.evolution-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.evolution-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.evolution-image {
+    width: 88px;
+    height: 88px;
+    padding: 6px;
+    object-fit: contain;
+    background-color: var(--color-white-soft);
+    border-radius: 50%;
+}
+
+.evolution-name {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+/* DIALOG NAV */
+
+.dialog-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.dialog-nav-button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+
+.dialog-nav-button:hover {
+    background-color: var(--color-device-red-dark);
+}
+
+.dialog-nav-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.dialog-counter {
+    font-family: var(--font-pixel);
+    font-size: 12px;
+}
+
+
 /* BREAKPOINTS */
 
 @media screen and (max-width: 480px) {
@@ -137,5 +290,17 @@
     .dialog-image {
         width: 150px;
         height: 150px;
+    }
+
+    .tab-button {
+        padding: 8px 4px;
+        font-family: var(--font-text);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .evolution-image {
+        width: 72px;
+        height: 72px;
     }
 }
