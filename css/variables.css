@@ -1,26 +1,37 @@
 :root {
     /* PAGE VARIABLES */
+
     --color-page: #1C1F24;
+    --color-page-overlay: #1C1F24D9;
+    --color-backdrop: #1C1F24B3;
     --content-max-width: 1440px;
 
+
     /* CASE COLORS */
+
     --color-device-red: #DC0A2D;
     --color-device-red-dark: #A3071F;
     --color-device-red-light: #F2384F;
 
+
     /* LENS & LAMP COLORS */
+
     --color-lens-blue: #29A8E0;
     --color-lens-blue-light: #8FD8F5;
     --color-led-red: #FF3B3B;
     --color-led-yellow: #FFD23F;
     --color-led-green: #3DDC6E;
 
+
     /* SCREEN COLORS */
+
     --color-bezel: #DEDEDE;
     --color-bezel-dark: #B5B5B5;
     --color-screen: #1B2733;
 
+
     /* MAIN COLORS */
+
     --color-black: #111111;
     --color-white: #FFFFFF;
     --color-text-light: #F2F4F7;
@@ -28,6 +39,7 @@
 
     
     /* ELEMENT TYPE COLORS */
+
     --type-normal: #A8A77A;
     --type-fire: #EE8130;
     --type-water: #6390F0;
@@ -48,7 +60,9 @@
     --type-fairy: #D685AD;
     --color-white-soft: #FFFFFF59;
 
+
     /* FONTS */
+    
     --font-pixel: "Press Start 2P", "Courier New", monospace;
     --font-text: "Rubik", Arial, sans-serif;
 }

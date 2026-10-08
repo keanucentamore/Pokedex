@@ -1,9 +1,8 @@
 const BASE_URL = "https://pokeapi.co/api/v2/";
 const LOAD_AMOUNT = 24;
 
-
-let offset = 0;
 let allPokemon = [];
+let currentIndex = 0;
 
 
 function init() {
@@ -12,18 +11,33 @@ function init() {
 
 
 async function loadPokemon() {
+    showLoading();
     try {
         const pokemonList = await fetchPokemonList();
         await fetchPokemonDetails(pokemonList);
-        offset = offset + LOAD_AMOUNT;
         renderPokemonList();
     } catch (error) {
         document.getElementById("statusMessage").innerHTML = getErrorTemplate();
     }
+    hideLoading();
+}
+
+
+function showLoading() {
+    document.getElementById("statusMessage").innerHTML = "";
+    document.getElementById("loadingScreen").classList.remove("d-none");
+    document.getElementById("loadMoreButton").disabled = true;
+}
+
+
+function hideLoading() {
+    document.getElementById("loadingScreen").classList.add("d-none");
+    document.getElementById("loadMoreButton").disabled = false;
 }
 
 
 async function fetchPokemonList() {
+    const offset = allPokemon.length;
     const response = await fetch(`${BASE_URL}pokemon?limit=${LOAD_AMOUNT}&offset=${offset}`);
     const data = await response.json();
     return data.results;
@@ -53,7 +67,7 @@ function renderPokemonList() {
     const cardList = document.getElementById("cardList");
     let cards = "";
     for (let i = 0; i < allPokemon.length; i++) {
-        cards += getPokemonCardTemplate(allPokemon[i]);
+        cards += getPokemonCardTemplate(allPokemon[i], i);
     }
     cardList.innerHTML = cards;
 }
@@ -65,6 +79,25 @@ function getTypeBadges(types) {
         badges += getTypeBadgeTemplate(types[i]);
     }
     return badges;
+}
+
+
+function openDialog(index) {
+    currentIndex = index;
+    const dialog = document.getElementById("pokemonDialog");
+    dialog.innerHTML = getDialogTemplate(allPokemon[index]);
+    document.body.classList.add("no-scroll");
+    dialog.showModal();
+}
+
+
+function closeDialog() {
+    document.getElementById("pokemonDialog").close();
+}
+
+
+function handleDialogClose() {
+    document.body.classList.remove("no-scroll");
 }
 
 

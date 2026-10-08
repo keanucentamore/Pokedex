@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/types.css">
     <link rel="stylesheet" href="./css/controls.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/dialog.css">
     <script src="./js/template.js"></script>
     <script src="script.js"></script>
 </head>
@@ -69,7 +71,7 @@
 
             <div class="device-controls">
                 <button class="load-more-button" id="loadMoreButton" data-id="load-more-button"
-                    aria-label="Load more Pokémon">Load more</button>
+                    aria-label="Load more Pokémon" onclick="loadPokemon()">Load more</button>
                 <div class="d-pad" aria-hidden="true">
                     <div class="d-pad-up"></div>
                     <div class="d-pad-left"></div>
@@ -79,6 +81,14 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <dialog class="dialog" id="pokemonDialog" data-id="dialog" aria-label="Pokémon details"
+        onclick="closeDialog()" onclose="handleDialogClose()"></dialog>
+
+    <div class="loading-screen d-none" id="loadingScreen" role="status">
+        <img class="loading-ball" src="./assets/icons/pokeball.svg" alt="">
+        <p class="loading-text">Loading…</p>
     </div>
 </body>
 

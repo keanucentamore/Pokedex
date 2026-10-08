@@ -1,0 +1,61 @@
+/* LOADING SCREEN */
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-page-overlay);
+}
+
+
+/* POKEBALL */
+
+.loading-ball {
+    width: 96px;
+    height: 96px;
+    animation: catch-wobble 1200ms ease-in-out infinite;
+}
+
+.loading-text {
+    font-family: var(--font-pixel);
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+@keyframes catch-wobble {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-12px);
+    }
+
+    20% {
+        transform: translateX(12px);
+    }
+
+    30% {
+        transform: translateX(-8px);
+    }
+
+    40% {
+        transform: translateX(8px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
