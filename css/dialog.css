@@ -56,7 +56,7 @@
     width: 40px;
     height: 40px;
     font-family: var(--font-pixel);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color-white);
     background-color: var(--color-black);
     border: none;
@@ -101,7 +101,7 @@
 
 .dialog-id {
     font-family: var(--font-pixel);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .dialog-image {
@@ -125,8 +125,9 @@
 .tab-button {
     flex: 1;
     padding: 10px;
-    font-family: var(--font-pixel);
-    font-size: 12px;
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 700;
     color: var(--color-text-light);
     background-color: transparent;
     border: 3px solid var(--color-bezel-dark);
@@ -224,7 +225,7 @@
 }
 
 .evolution-name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -263,7 +264,7 @@
 
 .dialog-counter {
     font-family: var(--font-pixel);
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
@@ -271,7 +272,7 @@
 
 @media screen and (max-width: 480px) {
     .dialog-content {
-        padding: 10px 12px 14px;
+        padding: 10px 8px 12px;
         border-radius: 8px 8px 8px 28px;
     }
 
@@ -283,20 +284,18 @@
         font-size: 20px;
     }
 
-    .dialog-id {
-        font-size: 12px;
-    }
-
     .dialog-image {
         width: 150px;
         height: 150px;
     }
 
+    .dialog-tabs {
+        gap: 4px;
+        padding: 8px 8px 0;
+    }
+
     .tab-button {
         padding: 8px 4px;
-        font-family: var(--font-text);
-        font-size: 14px;
-        font-weight: 700;
     }
 
     .evolution-image {
